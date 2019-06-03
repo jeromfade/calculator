@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Calculator</title>
+		<style type="text/css"> 
+			input
+			{
+				width: 210px;
+				height: 50px;
+			}
+			table
+			{
+				border:2px;
+				border-radius: 2px;
+				border-color: green;
+				border-width: 5px; 
+			}
+			td
+			{
+				padding: 2px;
+			}
+			button
+			{
+				padding: 20px;
+			}
+
+		</style>
+	</head>
+	<body>
+		<table >
+			<tr>
+			<th>
+		<input type="text" id="jerom" name="">
+			</th>
+		</tr>
+		<tr>
+			<td>
+		<button onclick="one()">1</button>
+		<button onclick="two()">2</button>
+		<button onclick="three()">3</button>
+			</td>
+		</tr>
+		<tr>
+			<td>
+		<button onclick="four()">4</button>
+		<button onclick="five()">5</button>
+		<button onclick="six()">6</button>
+			</td>
+		</tr>
+		<tr>
+			<td>
+		<button onclick="seven()">7</button>
+		<button onclick="eight()">8</button>
+		<button onclick="nine()">9</button>
+	</td>
+</tr>
+<tr>
+	<td>
+		<button onclick="zero()">0</button>
+		<button onclick="plus()">+</button>
+		<button onclick="minus()">-</button>
+</td>
+</tr>
+	<tr>
+		<td>
+		<button onclick="mul()">*</button>
+		<button onclick="equal()">=</button>
+		<button onclick="document.getElementById('jerom').value=''">c</button>
+</td>
+</tr>
+		</table>
+
+		
+		<script type="text/javascript">
+			
+			function one()
+			{
+				document.getElementById('jerom').value+='1';
+			}
+
+			function two()
+			{
+				document.getElementById('jerom').value+='2';
+			}
+
+			function three()
+			{
+				document.getElementById('jerom').value+='3';
+			}
+
+			function four()
+			{
+				document.getElementById('jerom').value+='4';
+			}
+
+			function five()
+			{
+				document.getElementById('jerom').value+='5';
+			}
+
+			function six()
+			{
+				document.getElementById('jerom').value+='6';
+			}
+
+			function seven()
+			{
+				document.getElementById('jerom').value+='7';
+			}
+
+			function eight()
+			{
+				document.getElementById('jerom').value+='8';
+			}
+
+			function nine()
+			{
+				document.getElementById('jerom').value+='9';
+			}
+
+			function zero()
+			{
+				document.getElementById('jerom').value+='0';
+			}
+
+			function minus()
+			{
+				document.getElementById('jerom').value+='-';
+			}
+
+			function plus()
+			{
+				document.getElementById('jerom').value+='+';
+			}
+
+			function mul()
+			{
+				document.getElementById('jerom').value+='*';
+			}
+
+			function equal()
+			{
+				document.getElementById('jerom').value=+eval(document.getElementById('jerom').value);
+			}								
+
+
+		</script>
+	</body>
+</html>
